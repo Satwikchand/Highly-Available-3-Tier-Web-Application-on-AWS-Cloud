@@ -56,8 +56,8 @@ systemctl restart nginx
 
 #### Visual Verification:
 ![Userdata Input](userdata.png)
-![Create Image Interface](create-ami.png)
-![AMI Successfully Created](ami-created.png)
+![Create Image Interface](Image-9.png)
+![AMI Successfully Created](Image-4.png)
 
 ---
 
@@ -78,11 +78,11 @@ The Launch Template defines the blueprint for instances that the Auto Scaling Gr
 - **Encryption:** Enable default EBS encryption.
 
 
-  ![](launch-template.png)
+  ![](Image-11.png)
 
 
 
-​	![](launch-tmplate.png)
+​	![](Image-12.png)
 
 ---
 
@@ -96,11 +96,11 @@ The ALB distributes incoming traffic across the instances in the private subnets
 - **Security Group:** Assign the security group created previously.
 - **Attributes:** Enable **Stickiness** with a 1-hour duration to maintain user sessions.
 
-![](alb1.png)
+![](Image-1.png)
 
-![](alb2.png)
+![](Image-2.png)
 
-![](alb4.png)
+![](Image-3.png)
 
 ### Target Group:
 
@@ -110,9 +110,9 @@ The ALB distributes incoming traffic across the instances in the private subnets
 
 
 
-  ![](tg.png)
+  ![](Image-16.png)
 
-  ![](healthchecks.png)
+  ![](Image-10.png)
 
 ---
 
@@ -133,10 +133,10 @@ The ASG ensures that the application maintains its desired capacity and scales b
 - **Cooldown:** 300 seconds.
 
 
-  ![](ASG.png)
-  ![](asg2.png)
+  ![](Image-5.png)
+  ![](Image-6.png)
 
-  ![](asg54.png)
+  ![](Image-7.png)
 
 ### Configuring Termination Policy:
 To ensure predictable termination of instances during scale-in events:
@@ -146,7 +146,7 @@ To ensure predictable termination of instances during scale-in events:
 4. In the **Termination policies** section, select and order your preferred policies (e.g., *OldestInstance*).
 5. Save the changes.
 
-![](terminationw.png)
+![](termination-1.png)
 
 ![](termination.png)
 
@@ -154,10 +154,10 @@ To ensure predictable termination of instances during scale-in events:
 
 ### Creation of S3 bucket:
 
-![](s3.png)
+![](Image-13.png)
 
-![](s345.png)
+![](Image-15.png)
 
-![](s333.png)
+![](Image-14.png)
 
-![](cats3.png)
+![](Image-8.png)
